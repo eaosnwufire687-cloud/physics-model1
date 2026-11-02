@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>上驱圆盘仿真</title>
+    <style>
+        body { margin: 0; overflow: hidden; } /* 让画布铺满整个屏幕 */
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <!-- 引入 Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <!-- 引入你的主程序 -->
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
